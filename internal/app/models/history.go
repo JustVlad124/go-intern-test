@@ -1,11 +1,9 @@
 package models
 
-import "time"
-
 type History struct {
-	ID     string
-	Time   time.Time
-	From   string
-	To     string
-	Amount float64
+	ID     string  `json:"id,omitempty"`
+	Time   string  `json:"time"`
+	From   string  `json:"from"`
+	To     string  `json:"to"`
+	Amount float64 `json:"amount"`
 }

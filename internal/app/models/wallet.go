@@ -1,6 +1,6 @@
 package models
 
 type Wallet struct {
-	ID      string
-	Balance float64
+	ID      string  `json:"id"`
+	Balance float64 `json:"balance"`
 }

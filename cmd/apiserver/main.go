@@ -9,14 +9,13 @@ import (
 
 func main() {
 	config := apiserver.NewConfig()
-	// hardcode
+	// hardcoded
 	err := godotenv.Load("./configs/.env")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	s := apiserver.New(config)
-	if err := s.Start(); err != nil {
+	if err := apiserver.Start(config); err != nil {
 		log.Fatal(err)
 	}
 }
