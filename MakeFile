@@ -1,5 +1,0 @@
-BINARY_NAME=EWallet
-
-.PHONY: build
-build:
-	go build -o cmd/apiserver/&{BINARY_NAME}
